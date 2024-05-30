@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+<div id="hero" class="-m-3 text-center h-screen bg-[url('/static/img/cake2.jpg')] bg-cover bg-no-repeat">
+    <h2 class="text-4xl font-semibold mt-3">Selamat datang di Jsson-cake</h2>
+    <!-- Section about me -->
+    <section id="about" class="mt-9 border-solid border-b-2 border-b-slate-400 ">
+            <h1 class="text-2xl underline">About Me</h1>
+                <div class="flex w-3/4  m-auto p-4">
+                        <img class="w-96 rounded-lg mr-5 p-2 shadow-xl border-solid border-2 border-pink-700" src="{%static 'img/donuts2.jpg'%}" alt="Donuts-variant">
+                        <p>"Toko kue kami adalah surga bagi pecinta manis, menawarkan beragam kue lezat yang dibuat dengan bahan-bahan berkualitas tinggi, dihiasi dengan kreativitas, dan dipanggang dengan penuh cinta untuk setiap kesempatan istimewa Anda. Dari kue ulang tahun yang megah hingga kue kering yang renyah, setiap gigitan membawa kenikmatan yang tak terlupakan. Kami juga menyediakan berbagai pilihan kue khusus sesuai permintaan, memastikan setiap pelanggan menemukan kesempurnaan dalam setiap potongan."</p>
+                    
+                </div>  
+                    <a class="ml-96 bg-pink-500 p-2 rounded-lg hover:bg-pink-600 hover:text-white" href="#menu">Lihat Menu Terlaris</a>
+        </section>
+</div>
+{% endblock content %}
+
+
+{% block footer %}
+    <footer class="flex h-96 bg-pink-200 text-center justify-center">
+        <div class="w-80 px-4 content-center">
+            <h1 class="underline mb-7 text-lg font-semibold text-red-600">Menu</h1>
+                <ul>
+                    <li><a href="/">Donuts</a></li>
+                    <li><a href="/">Cake</a></li>
+                    <li><a href="/">Pastry</a></li>
+                </ul>
+        </div>
+
+        <div class="w-80 px-4 content-center">
+            <h1 class="underline mb-7 text-lg font-semibold text-red-600">About me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A perferendis modi dicta vero vel neque corrupti, sunt autem, blanditiis, impedit suscipit mollitia! Sed tempore magni quia voluptas perspiciatis asperiores error!</p>
+        </div>
+
+        <div class="w-80 px-4 content-center">
+            <h1 class="underline mb-7 text-lg font-semibold text-red-600">Registrasi</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam saepe, aspernatur qui sequi ipsam adipisci exercitationem quasi eos deserunt dicta!</p>
+            <label for="email">
+                Masukan email anda
+            </label>
+            <input class="border-solid border-gray-600 visible" type="email" id="email">
+        </div>
+    </footer>
+{% endblock footer %}
+    
+    

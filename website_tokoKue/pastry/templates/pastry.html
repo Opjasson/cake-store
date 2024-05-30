@@ -1,0 +1,33 @@
+{% extends 'donuts.html' %}
+{% load static %}
+
+{% block menu %}
+    
+    
+    <section id="menu" class=" mt-3 text-center">
+        <h2 class="pt-10 font-montserrat font-extrabold text-3xl">Pastry library</h2>
+        <!-- DIv kumppulan card -->
+        <div class="flex justify-center pt-11 flex-wrap w-9/12 m-auto">
+            <!-- card 1 -->
+                <div class="w-80 py-3 hover:-mt-5 mb-8 border-solid  border-2 rounded-lg ">
+                    <img class="rounded-lg w-3/4 m-auto h-72" src="{% static 'img/pastry1.jpg'%}" alt="cake-birtday">
+                        <h1 class="my-2 bg-pink-500 text-white">Strawberry Pastry</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, reprehenderit.</p>
+                </div>
+
+            <!-- card 2  -->
+                <div class="w-80 py-3 hover:-mt-5 mb-8  border-solid  border-2 mx-3 rounded-lg">
+                    <img class="rounded-lg w-3/4 m-auto h-72" src="{% static 'img/pastry2.jpg'%}" alt="cake-birtday">
+                        <h1 class="my-2 bg-pink-500 text-white">package Pastry</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, dolores.</p>
+                </div>
+            <!-- card 3 -->
+                <div class="w-80 py-3 hover:-mt-5 mb-8  border-solid  border-2 rounded-lg">
+                    <img class="rounded-lg w-3/4 m-auto h-72" src="{% static 'img/pastry3.jpg'%}" alt="cake-birtday">
+                        <h1 class="my-2 bg-pink-500 text-white">Rainbow meses</h1>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, obcaecati.</p>
+                </div>
+        </div>
+    </section>
+
+{% endblock menu %}

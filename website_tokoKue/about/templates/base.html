@@ -1,0 +1,125 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- menyambungkan code style secara eksternal -->
+   {% include 'snipets/style.html' %} 
+    <!-- Custom tailwindcss -->
+
+
+    <title>Product- jasson cake</title>
+</head>
+<body class="scroll-smooth font-poppins">
+    <div class="w-full ">
+        <!-- navbar code -->
+        
+        {% block navbar %}
+            
+        <nav class="p-3 flex border-solid border-gray-500 border-2 justify-evenly">
+            <a href="/" class="bg-yellow-300 border-solid border-2 rounded-md p-1 ">Jsson-cake</a> 
+                {% for link,name in nav  %}
+                
+                    <li>
+                        <a class="hover:text-pink-600" href="{{link}}" title="">{{name}}</a>
+                    </li>
+                {% endfor %}
+        </nav>
+        {% endblock navbar %}
+        <!-- Div content -->
+        
+        {% block content %}
+            
+        {% endblock content %}
+            
+                    <!-- section card -->
+                    
+                    {% block menu %}
+                                                
+                        <section id="menu" class=" mt-3 text-center">
+                            <h2 class="pt-10 font-montserrat font-extrabold text-3xl">MENU ANDALAN KAMI</h2>
+                            <!-- DIv kumppulan card -->
+                            <div class="flex justify-center pt-11 flex-wrap w-9/12 m-auto">
+                                <!-- card 1 -->
+                                    <div class="w-80 py-3 hover:-mt-5 mb-8 border-solid  border-2 rounded-lg ">
+                                        <img class="rounded-lg w-3/4 m-auto h-72" src="{% static 'img/cake1.jpg'%}" alt="cake-birtday">
+                                            <h1 class="my-2 bg-yellow-400 text-white">Cake Birthday</h1>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, reprehenderit.</p>
+                                    </div>
+
+                                <!-- card 2  -->
+                                    <div class="w-80 py-3 hover:-mt-5 mb-8  border-solid  border-2 mx-3 rounded-lg">
+                                        <img class="rounded-lg w-3/4 m-auto h-72" src="{% static 'img/cake3.jpg'%}" alt="cake-birtday">
+                                            <h1 class="my-2  bg-yellow-400 text-white">Cake Birthday</h1>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, dolores.</p>
+                                    </div>
+                                <!-- card 3 -->
+                                    <div class="w-80 py-3 hover:-mt-5 mb-8  border-solid  border-2 rounded-lg">
+                                        <img class="rounded-lg w-3/4 m-auto h-72" src="{% static 'img/donuts1.jpg'%}" alt="cake-birtday">
+                                            <h1 class="my-2  bg-yellow-400 text-white">Cake Birthday</h1>
+                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, obcaecati.</p>
+                                    </div>
+
+                                <!-- card 4 -->
+                                    <div class="w-80 py-3 hover:-mt-5 mb-8 border-solid  border-2 rounded-lg ">
+                                        <img class="rounded-lg w-3/4 m-auto h-72" src="{% static 'img/donuts2.jpg'%}" alt="cake-birtday">
+                                            <h1 class="my-2  bg-yellow-400 text-white">Cake Birthday</h1>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, reprehenderit.</p>
+                                    </div>
+
+                                <!-- card 5  -->
+                                    <div class="w-80 py-3 hover:-mt-5 mb-8  border-solid  border-2 mx-3 rounded-lg">
+                                        <img class="rounded-lg w-3/4 m-auto h-72" src="{% static 'img/donuts3.jpg'%}" alt="cake-birtday">
+                                            <h1 class="my-2  bg-yellow-400 text-white">Cake Birthday</h1>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, dolores.</p>
+                                    </div>
+                                <!-- card 6 -->
+                                    <div class="w-80 py-3 hover:-mt-5 mb-8  border-solid  border-2 rounded-lg">
+                                        <img class="rounded-lg w-3/4 m-auto h-72" src="{% static 'img/cake2.jpg'%}" alt="cake-birtday">
+                                            <h1 class="my-2  bg-yellow-400 text-white">Cake Birthday</h1>
+                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, obcaecati.</p>
+                                    </div>
+                            </div>
+                        </section>
+                    {% endblock menu %}
+
+                <!-- Footer section -->
+                
+                {% block footer %}
+                    
+                    
+                    <footer class="flex h-96 bg-pink-200 text-center">
+                        <div class="w-2/5 border-solid border-black border-2 pt-40">
+                            <h1>Menu</h1>
+                                <ul>
+                                    <li><a href="/">Donuts</a></li>
+                                    <li><a href="/">Cake</a></li>
+                                    <li><a href="/">Pastry</a></li>
+                                </ul>
+                        </div>
+
+                        <div class="w-2/5 border-solid border-black border-2 pt-36">
+                            <h1>Menu</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A perferendis modi dicta vero vel neque corrupti, sunt autem, blanditiis, impedit suscipit mollitia! Sed tempore magni quia voluptas perspiciatis asperiores error!</p>
+                        </div>
+
+                        <div class="w-2/5 border-solid border-black border-2 pt-36">
+                            <h1>Menu</h1>
+                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam saepe, aspernatur qui sequi ipsam adipisci exercitationem quasi eos deserunt dicta!</p>
+                            <label for="email">
+                                Masukan email anda
+                            </label>
+                            <input class="border-solid border-gray-600 visible" type="email" id="email">
+                        </div>
+                    </footer>
+
+                {% endblock footer %}
+
+                
+
+        </div>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+{% load static %}
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          },
+          fontFamily: {
+            poppins: ['Poppins'],
+            montserrat: ['Montserrat']
+          }
+        }
+      }
+    }
+  </script>
+
+<!-- static link -->
+<link rel="stylesheet" href="{% static 'staticcss/riset.css'%}">
+<link rel="stylesheet" href="{% static 'staticcss/styleproduct.css'%}">
+<!-- <script src="{% static 'tailwind.config.js' %}" defer></script> -->

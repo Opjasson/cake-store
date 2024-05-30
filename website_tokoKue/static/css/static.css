@@ -1,0 +1,63 @@
+li {
+    list-style: none;
+    /* margin: 10px; */
+}
+
+li a {
+    color: rgba(0, 0, 0, 0.781);
+    font-size: 30px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: rgb(250, 116, 139);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font: normal normal normal 16px/1.5 poppins,serif;
+    background-image: url('../img/cakeBg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -70px;
+}
+
+/* CONTAINER STYLE */
+
+.container {
+    align-items: center;
+    display: flex;
+    width: 75%;
+    margin: auto;
+    justify-content: center;
+    border: 3px solid black;
+    margin-top: 7rem;
+}
+
+.container main {
+    display: inline-block;
+    width: 50%;
+    /* border: 3px solid black; */
+    /* text-align: center; */
+}
+
+.container .menu-bar {
+    border: 2px solid rgba(0, 0, 0, 0.493);
+    border-radius: 10px;
+    height: fit-content;
+    background-color: rgb(245, 109, 131);
+    padding: 5px;
+    margin-top: 80px;
+    margin-left: 20px;
+}
+
+.container .menu-bar:hover {
+    background-color: #fff;
+}
+
+.container h1 {
+    font-family: "poppins";
+    font-size: 50px;
+    line-height: 3rem;
+}
