@@ -4,7 +4,7 @@ from django.shortcuts import render
 def index(request):
     context = {
         'nav' : [
-            ['/','Home'],
+            ['/about','Home'],
             ['/about/donuts','Donuts'],
             ['/about/cake','Cake'],
             ['/about/pastry','Pastry']

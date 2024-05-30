@@ -3,10 +3,10 @@ from django.shortcuts import render
 def index(request):
     context = {
         'nav' : [
-            ['/','Home'],
-            ['donuts/','Donuts'],
-            ['cake/','Cake'],
-            ['pastry/','Pastry']
+            ['/about','Home'],
+            ['/about/donuts','Donuts'],
+            ['/about/cake','Cake'],
+            ['/about/pastry','Pastry']
         ]
     }
     return render(request,"pastry.html",context)
